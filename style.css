@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background: url("cloud-blue-sky.jpg");
+  color: #fff;
+  padding: 2rem;
+  width: 40%;
+  margin: 5rem auto;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  outline: none;
+  padding: 0.5rem 0.5rem;
+  background: none;
+  color: #fff;
+  border: none;
+}
+
+.search i {
+  cursor: pointer;
+}
+
+.search i:hover {
+  opacity: 0.5;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.weather-units {
+  font-size: 2rem;
+}
+
+.weather-units span {
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.weather-units span:hover {
+  opacity: 0.5;
+}
+
+.date-time {
+  margin-bottom: 2rem;
+  font-size: 15px;
+}
+
+.weather-body {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.min-max {
+  display: flex;
+  justify-content: center;
+}
+
+.forecast {
+  background: rgba(255, 255, 255, 0.6) transparent;
+  box-shadow: 0 6px 6px rgba(75, 75, 75, 0.6);
+  padding: 0.5rem;
+  margin-left: 16rem;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.weather-icon {
+  width: 100px;
+  margin-left: 13rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+
+.weather-card {
+  display: flex;
+  width: 200px;
+  border: 1px solid transparent;
+  box-shadow: 0 6px 6px rgba(75, 75, 75, 0.6);
+  border-radius: 10px;
+  align-items: center;
+  padding: 1rem;
+  margin-left: -4rem;
+}
+
+.weather-card i {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .heading {
+    flex-direction: column;
+  }
+
+  .weather-units {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .info {
+    grid-template-columns: none;
+  }
+  .forecast {
+    margin-left: 30%;
+  }
+  .weather-icon {
+    margin-left: 20%;
+  }
+}
